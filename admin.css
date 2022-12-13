@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+.stop-visible{
+    display:none;
+}
 .admin-container {
     padding-left: 12vw;
     padding-right: 12vw;
@@ -19,7 +22,7 @@
     text-align: center;
     padding: 1vw 4vw;
     text-decoration: none;
-    font-size: 2.6vh;
+    font-size: 1.5rem;
     border-bottom: 0.3vw solid #DBDBDB;
     overflow: auto;
 }
@@ -41,7 +44,7 @@
 
 .description {
     font-family: Gothic A1;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     padding-top: 0.7vw;
     padding-bottom: 0.7vw;
 
@@ -59,7 +62,7 @@
     border-radius: 1.5vw;
     width: 8vw;
     height: 2vw;
-    font-size: 17px;
+    font-size: 171.5rem;
     color: #000000;
     cursor: pointer;
     padding: 0.1vw;
@@ -73,7 +76,7 @@
     color: white;
     font-weight: 800;
     padding: 1vh;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
 }
 
 #admin-table {
@@ -95,7 +98,7 @@
     border-collapse: inherit;
     border-radius: 14px 14px 0px 0px;
     font-family: 'Poppins';
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
@@ -149,9 +152,9 @@ td {
     background-color: #fefefe;
     margin: 9vh auto;
     border: 1px solid #5FBEF0;
-    width: 40vw;
+    width: 46rem;
     border-radius: 15px;
-    height: 38vh;
+    height: 23rem;
     box-shadow: 0px 2px 13px rgb(170 170 170 / 27%);
 }
 
@@ -160,10 +163,10 @@ td {
 .deletecourseClose
 {
     top: 0;
-    padding-right: 1vh;
+    padding-right: 1rem;
     color: #000000;
     float: right;
-    font-size: 28px;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -181,7 +184,8 @@ td {
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    margin-top: 6vh;
+    margin: 1.8rem;
+    
 }
 
 .row-flex {
@@ -198,33 +202,36 @@ td {
 }
 
 .row-flex-button {
-    padding-top: 1.5vw;
-    margin: auto;
+    display: flex;
+    padding-top: 2rem;
+    margin :auto;
+    justify-content: center;
 }
 
 #courseLabel,
 #instructorLabel,#selectCourseLabel{
+    /* border:2px solid black; */
     font-family: 'Gothic A1';
     font-style: normal;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     line-height: 3vh;
     color: black;
     font-weight: 400 !important;
     margin: 4vh 0vw 2vh 1.5vw;
-    width: 14vw;
+    width: 12rem;
 }
 
 #cancel_course_button {
     background: white;
-    font-size: 2vh;
+    font-size: 1.5rem;
     border-radius: 41vh;
     border-color: #5FBEF0;
     margin-right: 1rem;
     font-family: 'Poppins';
     font-style: normal;
     color: #5FBEF0;
-    width: 12vw;
-    height: 5vh;
+    width: 10rem;
+    height: 4.5rem;
     border-width: 0.1vw !important;
     border-style: double;
     /* background: white;
@@ -244,12 +251,12 @@ td {
 }
 
 #save_course_button {
-    width: 12vw;
-    height: 5vh;
+    width: 10rem;
+    height: 4.5rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 2vh;
+    font-size: 1.5rem;
     background-color: #5FBEF0;
     /* identical to box height, or 138% */
     border-radius: 2vw;
@@ -271,30 +278,31 @@ td {
     border-color: #5FBEF0;
     border-width: 0.1vw !important;
     border-style: double;
-    height: 5vh;
-    width: 22vw;
+    height: 3rem;
+    width: 25rem;
 }
 .selectTitle{
-    width: 15vw !important;
+    width: 15rem !important;
     text-align: center;
-    font-size:2.5vh;
+    font-size:1.3rem;
 }
 .upload-btn{
     border-radius: 41vh;
     border-color: #5FBEF0;
     border-width: 0.1vw !important;
     border-style: dashed;
-    height: 5vh;
-    width:10vw;
+    height: 4rem;
+    width:12rem;
 }
 #delete_course_button{
     background-color: #F5222D;
-    width: 12vw;
-    height: 5vh;
+    width: 10rem;
+    height: 4.5rem;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
-    font-size: 2vh;
+    font-size: 1.2rem;
+    margin-right: 1rem;
     border-radius: 2vw;
     border: none;
     text-align: center;
@@ -303,6 +311,29 @@ td {
 .caption{
     font-family: Poppins;
     font-weight: 400;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     color:#AAAAAA
+}
+
+@media(max-width:1250px){
+    html{
+        font-size: 70%;
+    }
+    .courseModalContent,
+.studentModalContent,
+.deletecourseModalContent {
+   height: 25rem;
+}
+
+}
+
+@media(max-width:800px){
+    html{
+        font-size: 55%;
+    }
+.courseModalContent,
+.studentModalContent,
+.deletecourseModalContent {
+   height: 30rem;
+}
 }

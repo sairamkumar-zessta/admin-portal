@@ -14,39 +14,39 @@ courses.onclick = function() {
     instructor.classList.remove('active');
     courses.classList.add('active');
     learner.classList.remove('active');
-    courseTable.classList.remove('d-none');
-    instructorTable.classList.add('d-none');
-    learnerTable.classList.add('d-none');
+    courseTable.classList.remove('stop-visible');
+    instructorTable.classList.add('stop-visible');
+    learnerTable.classList.add('stop-visible');
 }
 instructor.onclick = function() {
     addBtn.textContent = "Add Instructor";
     instructor.classList.add('active');
     courses.classList.remove('active');
     learner.classList.remove('active');
-    courseTable.classList.add('d-none');
-    instructorTable.classList.remove('d-none');
-    learnerTable.classList.add('d-none');
+    courseTable.classList.add('stop-visible');
+    instructorTable.classList.remove('stop-visible');
+    learnerTable.classList.add('stop-visible');
 }
 learner.onclick = function() {
     addBtn.textContent = "Add Learner";
     instructor.classList.remove('active');
     courses.classList.remove('active');
     learner.classList.add('active');
-    courseTable.classList.add('d-none');
-    instructorTable.classList.add('d-none');
-    learnerTable.classList.remove('d-none');
+    courseTable.classList.add('stop-visible');
+    instructorTable.classList.add('stop-visible');
+    learnerTable.classList.remove('stop-visible');
 }
 addBtn.onclick = function() {
     if (addBtn.textContent==="Add Course" || addBtn.textContent==="Add Instructor"){
-    addCourseModal.classList.remove('d-none');
+    addCourseModal.classList.remove('stop-visible');
     }
     else if (addBtn.textContent==="Add Learner"){
-        addStudentModal.classList.remove('d-none');
+        addStudentModal.classList.remove('stop-visible');
     }
 }
 courseClose.onclick = function() {
-    addCourseModal.classList.add('d-none');
+    addCourseModal.classList.add('stop-visible');
 }
 studentClose.onclick = function(){
-    addStudentModal.classList.add('d-none');
+    addStudentModal.classList.add('stop-visible');
 }
