@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.stop-visible{
+    display:none;
+}
+.admin-container {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    overflow: auto;
+}
+
+.admin-navbar {
+    overflow: hidden;
+    margin-left: -2.1vw;
+}
+
+/* Style the links inside the navigation bar */
+.admin-navbar a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 1vw 4vw;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-bottom: 0.3vw solid #DBDBDB;
+    overflow: auto;
+    font-weight:500;
+    font-family:'Poppins';
+
+}
+
+.admin-navbar a:hover {
+    cursor: pointer;
+}
+
+.admin-navbar a.active {
+    border-bottom: 0.3vw solid #006BB6;
+    color: #006BB6;
+}
+
+.description-bar {
+    border-bottom:2px solid #DBDBDB;
+    display:flex;
+    justify-content: space-between;
+    /* padding-top: 1.5vw; */
+    margin-top:3vh;
+    padding-bottom: 1.5vh;
+    margin-bottom: 1.5vh;
+    align-items: center;
+
+}
+
+.description {
+   
+    font-family: 'Poppins';
+    color:#4D4D4D;
+    font-weight:500;
+    font-size: 1.2rem;
+
+}
+#left-description-bar input{
+    border-radius:50px;
+    height:2.5rem;
+    width:13.75rem;
+    border:1px solid #5FBEF0;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    font-weight: 0;
+    color: black;
+}
+#left-description-bar input::placeholder {
+    color: #ccc;
+}
+
+#left-description-bar {
+    display: flex;
+    gap: 1rem;
+}
+
+/* .instructors_filter {
+    display: none;
+    border: 1px solid #5FBEF0;
+    background-color: white;
+    border-radius: 1.5vw;
+    width: 8vw;
+    height: 2vw;
+    font-size: 171.5rem;
+    color: #000000;
+    cursor: pointer;
+    padding: 0.1vw;
+
+}*/
+
+.add-btn {
+
+    border:none;
+    font-family: 'Poppins';
+    background-color: #5FBEF0;
+    border-radius: 1.5vw;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    height:2.5rem;
+    display: inline-block;
+    padding: 0px 1rem;
+    text-align: center;
+} 
+#courseDetails{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.courseCard{
+    display: flex;
+    justify-content: space-between;
+    
+    background: linear-gradient(108.02deg, rgba(246, 251, 254, 0) 64.53%, #D6F0FF 122.73%), linear-gradient(179.46deg, rgba(246, 251, 254, 0) 1.56%, #DBF2FF 127.02%);
+    border-radius: 10px;
+    margin: 0.8rem 1%;
+    width:23%;
+}
+.delete-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(254, 245, 245, 0.2) -6.12%, #FCEAE8 106.76%);
+    border-radius: 0px 10px 10px 0px;
+    padding: 0.5rem;
+}
+.course-card-left{
+    padding:0.5rem;
+}
