@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600&family=Poppins:wght@500&display=swap');
 .stop-visible{
     display:none;
 }
@@ -20,12 +20,11 @@
     text-align: center;
     padding: 1vw 4vw;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-bottom: 0.3vw solid #DBDBDB;
     overflow: auto;
     font-weight:500;
     font-family:'Poppins';
-
 }
 
 .admin-navbar a:hover {
@@ -54,7 +53,7 @@
     font-family: 'Poppins';
     color:#4D4D4D;
     font-weight:500;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
 }
 #left-description-bar input{
@@ -103,8 +102,9 @@
     display: inline-block;
     padding: 0px 1rem;
     text-align: center;
+    cursor: pointer;
 } 
-#courseDetails{
+.courseDetails{
     display: flex;
     flex-wrap: wrap;
     
@@ -113,7 +113,6 @@
 .courseCard{
     display: flex;
     justify-content: space-between;
-    
     background: linear-gradient(108.02deg, rgba(246, 251, 254, 0) 64.53%, #D6F0FF 122.73%), linear-gradient(179.46deg, rgba(246, 251, 254, 0) 1.56%, #DBF2FF 127.02%);
     border-radius: 10px;
     margin: 0.8rem 1%;
@@ -130,4 +129,27 @@
 }
 .course-card-left{
     padding:0.5rem;
+    font-family: 'Gothic A1';
+}
+.course-title{
+    color:#006BB6;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.learner-count-title{
+    color:#999;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+.learner-count{
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+.arrange-row{
+    display: flex;
+    justify-content: space-between;
+}
+.arrange-col{
+    display: flex;
+    flex-direction: column;
 }
