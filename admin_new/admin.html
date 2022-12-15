@@ -17,14 +17,39 @@
             </ul>
         </div>
         <div class="description-bar">
-                <p class="description">You can manage Course details here.</p>
-                <div id="left-description-bar">
+                <p class="description" id="description">You can manage Course details here.</p>
+                <div id="left-description-bar" >
                     <input type="search" value="" placeholder="Search...">
+                    <select  id="instructors_filter" class="stop-visible">
+                        <option default  value="all">All</option>
+                        <option value="mapped">Mapped</option>
+                        <option value="unmapped">Unmapped</option>
+                    </select>
                     <button class="add-btn" id="add-btn">Add Course</button>
                 </div>
         </div>
         <div id="courseDetails">
-            <div class="courseDetails">
+            <div class="courseDetails" id="req">
+                <div class="courseCard" id="courseCard">
+                    <div class="course-card-left">
+                        <p class="course-title">Data Scientist -Python and ML Basics</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Learner count</span>
+                                <span class="learner-count">123</span>
+                                
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Trainer name</span>
+                                <span class="learner-count">Sidhartha Chinthapally</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="delete-icon">
+                        <img src="delete.png" alt="del">
+                    </div>
+                </div> 
                 <div class="courseCard">
                     <div class="course-card-left">
                         <p class="course-title">Data Scientist -Python and ML Basics</p>
@@ -40,6 +65,25 @@
                             </div>
                         </div>
                         
+                    </div>
+                    <div class="delete-icon">
+                        <img src="delete.png" alt="del">
+                    </div>
+                </div> 
+                <div class="courseCard">
+                    <div class="course-card-left">
+                        <p class="course-title">Data Scientist -Python and ML Basics</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Learner count</span>
+                                <span class="learner-count">123</span>
+                                
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Trainer name</span>
+                                <span class="learner-count">Sidhartha Chinthapally</span>
+                            </div>
+                        </div>  
                     </div>
                     <div class="delete-icon">
                         <img src="delete.png" alt="del">
@@ -104,51 +148,165 @@
                     <div class="delete-icon">
                         <img src="delete.png" alt="del">
                     </div>
-                </div> 
-                <div class="courseCard">
-                    <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Learner count</span>
-                                <span class="learner-count">123</span>
-                                
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Trainer name</span>
-                                <span class="learner-count">Sidhartha Chinthapally</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
-                    </div>
-                </div> 
-                <div class="courseCard">
-                    <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Learner count</span>
-                                <span class="learner-count">123</span>
-                                
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Trainer name</span>
-                                <span class="learner-count">Sidhartha Chinthapally</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
-                    </div>
-                </div> 
-                
+                </div>    
             </div>
         </div>
-        <h1>Hi This is sai</h1>
+        <div id="trainerDetails" class="stop-visible">
+            <div class="trainerDetails">
+                <div class="trainerCard trainerCard-width">
+                    <div class="trainer-card-left">
+                        <p class="trainer-title">Sidhartha Chinthapally</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Course count</span>
+                                <span class="learner-count">12</span>
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Status</span>
+                                <span class="learner-count">Mapped</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="eye-icon">
+                        <img src="eye.png" alt="eye">
+                    </div>
+                </div>
+                <div class="trainerCard trainerCard-width">
+                    <div class="trainer-card-left">
+                        <p class="trainer-title">Sidhartha Chinthapally</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Course count</span>
+                                <span class="learner-count">12</span>
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Status</span>
+                                <span class="learner-count">Mapped</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="eye-icon">
+                        <img src="eye.png" alt="eye">
+                    </div>
+                </div>
+                <div class="trainerCard trainerCard-width">
+                    <div class="trainer-card-left">
+                        <p class="trainer-title">Sidhartha Chinthapally</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Course count</span>
+                                <span class="learner-count">12</span>
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Status</span>
+                                <span class="learner-count">Mapped</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="eye-icon">
+                        <img src="eye.png" alt="eye">
+                    </div>
+                </div>
+                <div class="trainerCard trainerCard-width">
+                    <div class="trainer-card-left">
+                        <p class="trainer-title">Sidhartha Chinthapally</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Course count</span>
+                                <span class="learner-count">12</span>
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Status</span>
+                                <span class="learner-count">Mapped</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="eye-icon">
+                        <img src="eye.png" alt="eye">
+                    </div>
+                </div>
+                <div class="trainerCard trainerCard-width">
+                    <div class="trainer-card-left">
+                        <p class="trainer-title">Sidhartha Chinthapally</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Course count</span>
+                                <span class="learner-count">12</span>
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Status</span>
+                                <span class="learner-count">Mapped</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="eye-icon">
+                        <img src="eye.png" alt="eye">
+                    </div>
+                </div>
+                <div class="trainerCard trainerCard-width">
+                    <div class="trainer-card-left">
+                        <p class="trainer-title">Sidhartha Chinthapally</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Course count</span>
+                                <span class="learner-count">12</span>
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Status</span>
+                                <span class="learner-count">Mapped</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="eye-icon">
+                        <img src="eye.png" alt="eye">
+                    </div>
+                </div>
+                <div class="trainerCard trainerCard-width">
+                    <div class="trainer-card-left">
+                        <p class="trainer-title">Sidhartha Chinthapally</p>
+                        <div class="arrange-row">
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Course count</span>
+                                <span class="learner-count">12</span>
+                            </div>
+                            <div class="arrange-col">
+                                <span class="learner-count-title">Status</span>
+                                <span class="learner-count">Mapped</span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="eye-icon">
+                        <img src="eye.png" alt="eye">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="learnerDetails" class="stop-visible">
+            <table id="learner-table">
+                <tr id="learner-thead">
+                    <th>Learners Name</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="eye.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="eye.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="eye.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="eye.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <script src="admin.js"></script>
 </body>
