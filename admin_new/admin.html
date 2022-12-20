@@ -19,7 +19,11 @@
         <div class="description-bar">
                 <p class="description" id="description">You can manage Course details here.</p>
                 <div id="left-description-bar" >
-                    <input type="search" value="" placeholder="Search...">
+                    <form>
+                        <input type="search" value="" placeholder="Search...">
+                        <button class="searchIcon" type="submit"></button>
+                    </form>
+                   
                     <select  id="instructors_filter" class="stop-visible">
                         <option default  value="all">All</option>
                         <option value="mapped">Mapped</option>
@@ -29,126 +33,26 @@
                 </div>
         </div>
         <div id="courseDetails">
-            <div class="courseDetails" id="req">
+            <div class="courseDetails" id="courseCardCont">
                 <div class="courseCard" id="courseCard">
                     <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
+                        <p class="course-title">Data Science -Python and ML Basics</p>
                         <div class="arrange-row">
                             <div class="arrange-col">
                                 <span class="learner-count-title">Learner count</span>
                                 <span class="learner-count">123</span>
-                                
                             </div>
                             <div class="arrange-col">
                                 <span class="learner-count-title">Trainer name</span>
                                 <span class="learner-count">Sidhartha Chinthapally</span>
                             </div>
                         </div>
-                        
+
                     </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
-                    </div>
-                </div> 
-                <div class="courseCard">
-                    <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Learner count</span>
-                                <span class="learner-count">123</span>
-                                
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Trainer name</span>
-                                <span class="learner-count">Sidhartha Chinthapally</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
+                    <div class="delete-icon" id="delete-icon">
+                        <img src="https://i.postimg.cc/prKj8HZB/delete.png" alt="del">
                     </div>
                 </div> 
-                <div class="courseCard">
-                    <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Learner count</span>
-                                <span class="learner-count">123</span>
-                                
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Trainer name</span>
-                                <span class="learner-count">Sidhartha Chinthapally</span>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
-                    </div>
-                </div> 
-                <div class="courseCard">
-                    <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Learner count</span>
-                                <span class="learner-count">123</span>
-                                
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Trainer name</span>
-                                <span class="learner-count">Sidhartha Chinthapally</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
-                    </div>
-                </div> 
-                <div class="courseCard">
-                    <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Learner count</span>
-                                <span class="learner-count">123</span>
-                                
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Trainer name</span>
-                                <span class="learner-count">Sidhartha Chinthapally</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
-                    </div>
-                </div> 
-                <div class="courseCard">
-                    <div class="course-card-left">
-                        <p class="course-title">Data Scientist -Python and ML Basics</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Learner count</span>
-                                <span class="learner-count">123</span>
-                                
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Trainer name</span>
-                                <span class="learner-count">Sidhartha Chinthapally</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="delete-icon">
-                        <img src="delete.png" alt="del">
-                    </div>
-                </div>    
             </div>
         </div>
         <div id="trainerDetails" class="stop-visible">
@@ -167,116 +71,8 @@
                             </div>
                         </div>  
                     </div>
-                    <div class="eye-icon">
-                        <img src="eye.png" alt="eye">
-                    </div>
-                </div>
-                <div class="trainerCard trainerCard-width">
-                    <div class="trainer-card-left">
-                        <p class="trainer-title">Sidhartha Chinthapally</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Course count</span>
-                                <span class="learner-count">12</span>
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Status</span>
-                                <span class="learner-count">Mapped</span>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="eye-icon">
-                        <img src="eye.png" alt="eye">
-                    </div>
-                </div>
-                <div class="trainerCard trainerCard-width">
-                    <div class="trainer-card-left">
-                        <p class="trainer-title">Sidhartha Chinthapally</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Course count</span>
-                                <span class="learner-count">12</span>
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Status</span>
-                                <span class="learner-count">Mapped</span>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="eye-icon">
-                        <img src="eye.png" alt="eye">
-                    </div>
-                </div>
-                <div class="trainerCard trainerCard-width">
-                    <div class="trainer-card-left">
-                        <p class="trainer-title">Sidhartha Chinthapally</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Course count</span>
-                                <span class="learner-count">12</span>
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Status</span>
-                                <span class="learner-count">Mapped</span>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="eye-icon">
-                        <img src="eye.png" alt="eye">
-                    </div>
-                </div>
-                <div class="trainerCard trainerCard-width">
-                    <div class="trainer-card-left">
-                        <p class="trainer-title">Sidhartha Chinthapally</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Course count</span>
-                                <span class="learner-count">12</span>
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Status</span>
-                                <span class="learner-count">Mapped</span>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="eye-icon">
-                        <img src="eye.png" alt="eye">
-                    </div>
-                </div>
-                <div class="trainerCard trainerCard-width">
-                    <div class="trainer-card-left">
-                        <p class="trainer-title">Sidhartha Chinthapally</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Course count</span>
-                                <span class="learner-count">12</span>
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Status</span>
-                                <span class="learner-count">Mapped</span>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="eye-icon">
-                        <img src="eye.png" alt="eye">
-                    </div>
-                </div>
-                <div class="trainerCard trainerCard-width">
-                    <div class="trainer-card-left">
-                        <p class="trainer-title">Sidhartha Chinthapally</p>
-                        <div class="arrange-row">
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Course count</span>
-                                <span class="learner-count">12</span>
-                            </div>
-                            <div class="arrange-col">
-                                <span class="learner-count-title">Status</span>
-                                <span class="learner-count">Mapped</span>
-                            </div>
-                        </div>  
-                    </div>
-                    <div class="eye-icon">
-                        <img src="eye.png" alt="eye">
+                    <div class="eye-icon" id="trainer-eye-icon">
+                        <img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt="eye">
                     </div>
                 </div>
             </div>
@@ -286,28 +82,135 @@
                 <tr id="learner-thead">
                     <th>Learners Name</th>
                     <th>Actions</th>
+                    <th>Remove</th>
                 </tr>
                 <tbody>
                     <tr>
                         <td>Sravanthi Peetla</td>
-                        <td><img src="eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
                     </tr>
                     <tr>
                         <td>Sravanthi Peetla</td>
-                        <td><img src="eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
                     </tr>
                     <tr>
                         <td>Sravanthi Peetla</td>
-                        <td><img src="eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
                     </tr>
                     <tr>
                         <td>Sravanthi Peetla</td>
-                        <td><img src="eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+    <div class="bg-model" id="deleteCourseModal">
+        <div class="course-model">
+            <div>
+                <div class="delete-course-model-top-first">
+                    <h1>Delete Course</h1>
+                    <div id="deleteCancel">
+                        <span> &times;</span>
+                    </div>
+                </div>
+                    <h1 class="delete-title">Data Science -Python and ML Basics </h1>
+            </div>
+                <div class="delete-course-model-bottom">
+                    <button id="delete-button" class="delete-button">Delete</button>
+                    <button id="cancel-button" class="cancel-button">Cancel</button>
+                    <p>once deleted can't be restore again</p>  
+                </div>  
+        </div>
+       
+    </div>
+    <div class="bg-model" id="addCourseModal">
+        <div class="course-model add-course-model-height">
+            <div>
+                <div class="add-course-model-top-first">
+                    <h1 id="modelTitle">Add Course</h1>
+                    <div id="addCourseCancel">
+                        <span> &times;</span>
+                    </div>
+                </div>
+                    <div class="add-course-name">
+                        <p>Course Name</p>
+                        <input type="text" placeholder="Enter course name">
+                    </div>
+                    <div class="choose-trainer-name">
+                        <div class="choose-trainer-arrange">
+                            <p>Choose Trainer</p>
+                            <span>Existing Trainer</span>
+                        </div> 
+                        <select placeholder="Enter course name">
+                            <option default  value="" class="choose-trainer-option">Choose trainer</option>
+                        </select>
+                    </div>
+            </div>
+                <div class="add-course-model-bottom">
+                    <button id="delete-button" class="add-button">Add</button>
+                    <button id="cancel-button" class="cancel-button">Cancel</button>
+                </div>  
+        </div>
+       
+    </div>
+    <div class="bg-model" id="deleteTrainerModal">
+        <div class="trainer-model">
+            <div>
+                <div class="delete-trainer-model-top-first">
+                    <h1 class="delete-trainer-title">Trainer-<span class="delete-trainer-name">Sidhartha Chinthapally</span></h1>
+                    <div id="deleteTrainerCancel">
+                        <span>&times;</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+       
+    </div>
+    <div class="bg-model" id="addLearnerModal">
+        <div class="course-model add-learner-model-height">
+            <div>
+                <div class="add-learner-model-top-first">
+                    <h1>Add Learners</h1>
+                    <div id="addLearnerCancel">
+                        <span> &times;</span>
+                    </div>
+                </div>
+                    <div class="change-learner">
+                        <button id="singleUser" class="learner-inactive learner-active">Single User</button>
+                        <button id="multipleUser" class="learner-inactive">Bulk Users</button>
+                    </div>
+                    <div id="singleLearner">
+                        <div class="add-learner">
+                            <div class="choose-trainer-arrange">
+                                <p>User ID</p>
+                                <span>Single learner</span>
+                            </div> 
+                            <input type="text" placeholder="Enter user ID">
+                        </div>
+                    </div>
+                    <div id="multipleLearners" class="stop-visible">
+                        <div class="add-learner">
+                            <div class="choose-trainer-arrange">
+                                <p>Upload CSV file</p>
+                                <span>Multiple learners</span>
+                            </div> 
+                            <button class="upload-btn"><img src="https://i.postimg.cc/7Z71QKgW/Vector-4.png" alt=""></button>
+                        </div>
+                    </div>
+            </div>
+                <div class="add-course-model-bottom">
+                    <button id="delete-button" class="add-button">Add</button>
+                    <button id="cancel-button" class="cancel-button">Cancel</button>
+                </div>  
+        </div>
+       
+    </div>
+    
     <script src="admin.js"></script>
 </body>
 </html>
