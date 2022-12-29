@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Data Science Lab</title>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-navbar">
+                <a class="course-nav active" id="course-nav">Courses</a>
+                <a class="instructor-nav" id="instructor-nav">Trainers</a>
+                <a class="learner-nav" id="learner-nav">Learners</a>
+        </div>
+        <div class="description-bar">
+                <p class="description" id="description">You can manage Course details here.</p>
+                <div id="right-description-bar" >
+                    <form>
+                        <input type="search" value="" placeholder="Search...">
+                        <button class="searchIcon" type="submit"></button>
+                    </form>
+                    <select  id="instructors_filter" class="stop-visible">
+                        <option default  value="all">All</option>
+                        <option value="mapped">Mapped</option>
+                        <option value="unmapped">Unmapped</option>
+                    </select>
+                    
+                    <button class="add-btn" id="add-btn">Add Course</button>
+                </div>
+        </div>
+        <div id="courseDetails">
+            <div class="courseDetails" id="courseCardCont">
+            </div>
+        </div>
+        <div id="trainerDetails" class="stop-visible">
+            <div class="trainerDetails" id="trainerCardCont">
+            </div>
+        </div>
+        <div id="learnerDetails" class="stop-visible">
+            <table id="learner-table">
+                <tr id="learner-thead">
+                    <th>Learners Name</th>
+                    <th>Actions</th>
+                    <th>Remove</th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td>Sravanthi Peetla</td>
+                        <td><img src="https://i.postimg.cc/KzLzhpXT/eye.png" alt=""></td>
+                        <td><img src="https://i.postimg.cc/prKj8HZB/delete.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="bg-model" id="deleteCourseModal">
+        <div class="course-model">
+            <div>
+                <div class="delete-course-model-top-first">
+                    <h1>Delete Course</h1>
+                    <div id="deleteCancel">
+                        <span> &times;</span>
+                    </div>
+                </div>
+                    <h1 class="delete-title" >Delete <span id="deleteTitle"></span>?</h1>
+            </div>
+                <div class="delete-course-model-bottom">
+                    <button id="delete-button" class="delete-button">Delete</button>
+                    <button id="cancel-button" class="cancel-button">Cancel</button>
+                    <p>once deleted can't be restore again</p>  
+                </div>  
+        </div>
+       
+    </div>
+    <div class="bg-model" id="addCourseModal">
+        <div class="course-model add-course-model-height">
+            <div>
+                <div class="add-course-model-top-first">
+                    <h1 id="modelTitle">Add Course</h1>
+                    <div id="addCourseCancel">
+                        <span> &times;</span>
+                    </div>
+                </div>
+                    <div class="add-course-name">
+                        <p>Course Name</p>
+                        <input type="text" placeholder="Enter course name">
+                    </div>
+                    <div class="choose-trainer-name">
+                        <div class="choose-trainer-arrange">
+                            <p>Choose Trainer</p>
+                            <span>Existing Trainer</span>
+                        </div> 
+                        <select placeholder="Enter course name">
+                            <option default  value="" class="choose-trainer-option">Choose trainer</option>
+                        </select>
+                    </div>
+            </div>
+                <div class="add-course-model-bottom">
+                    <button id="delete-button" class="add-button">Add</button>
+                    <button id="cancel-button" class="cancel-button">Cancel</button>
+                </div>  
+        </div>
+       
+    </div>
+    <div class="bg-model" id="deleteTrainerModal">
+        <div class="trainer-model">
+            <div>
+                <div class="delete-trainer-model-top-first">
+                    <h1 class="delete-trainer-title">Trainer-<span class="delete-trainer-name" id="deleteTrainer"></span></h1>
+                    <div >
+                        <span id="deleteTrainerCancel">&times;</span>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="bg-model" id="addLearnerModal">
+        <div class="course-model add-learner-model-height">
+            <div>
+                <div class="add-learner-model-top-first">
+                    <h1>Add Learners</h1>
+                    <div id="addLearnerCancel">
+                        <span> &times;</span>
+                    </div>
+                </div>
+                    <div class="change-learner">
+                        <button id="singleUser" class="learner-inactive learner-active">Single User</button>
+                        <button id="multipleUser" class="learner-inactive">Bulk Users</button>
+                    </div>
+                    <div id="singleLearner">
+                        <div class="add-learner">
+                            <div class="choose-trainer-arrange">
+                                <p>User ID</p>
+                                <span>Single learner</span>
+                            </div> 
+                            <input type="text" placeholder="Enter user ID">
+                        </div>
+                    </div>
+                    <div id="multipleLearners" class="stop-visible">
+                        <div class="add-learner">
+                            <div class="choose-trainer-arrange">
+                                <p>Upload CSV file</p>
+                                <span>Multiple learners</span>
+                            </div> 
+                            <button class="upload-btn"><img src="https://i.postimg.cc/7Z71QKgW/Vector-4.png" alt=""></button>
+                        </div>
+                    </div>
+            </div>
+                <div class="add-course-model-bottom">
+                    <button id="delete-button" class="add-button">Add</button>
+                    <button id="cancel-button" class="cancel-button">Cancel</button>
+                </div>  
+        </div>
+       
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
